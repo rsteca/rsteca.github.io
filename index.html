@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo Stecanella — Software Engineer</title>
+  <meta name="description" content="Rodrigo Stecanella — Founding Senior Software Engineer at AirOps. Based in Montevideo, Uruguay.">
+  <meta property="og:title" content="Rodrigo Stecanella">
+  <meta property="og:description" content="Founding Senior Software Engineer at AirOps">
+  <meta property="og:type" content="website">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0f;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   Oxygen, Ubuntu, Cantarell, sans-serif;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    #particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(10, 10, 15, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 229, 255, 0.1);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid rgba(0, 229, 255, 0.4);
+      margin-bottom: 1.5rem;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      color: #00e5ff;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      color: #00e5ff;
+      text-decoration: none;
+      transition: background 0.3s, border-color 0.3s, transform 0.2s;
+    }
+
+    .links a:hover {
+      background: rgba(0, 229, 255, 0.15);
+      border-color: #00e5ff;
+      transform: scale(1.1);
+    }
+
+    .links a svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.75rem; }
+      .title { font-size: 0.95rem; }
+      .card { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <main class="content">
+    <div class="card">
+      <img src="rodrigo.jpeg" alt="Rodrigo Stecanella" class="avatar">
+      <h1>Rodrigo Stecanella</h1>
+      <p class="title">Founding Senior Software Engineer at AirOps</p>
+      <div class="links">
+        <a href="https://linkedin.com/in/rodrigo-stecanella/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/rsteca/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function() {
+      var canvas = document.getElementById('particles');
+      var ctx = canvas.getContext('2d');
+      var width, height, dpr;
+      var particles = [];
+      var mouse = { x: null, y: null, down: false };
+
+      function resize() {
+        dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+        initParticles();
+      }
+
+      function initParticles() {
+        var count = Math.min(Math.floor((width * height) / 8000), 150);
+        // Keep existing particles if we have some, just adjust count
+        while (particles.length > count) particles.pop();
+        while (particles.length < count) {
+          particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.8,
+            vy: (Math.random() - 0.5) * 0.8,
+            r: Math.random() * 1.5 + 1
+          });
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+
+        var mouseRadius = 120;
+        var mouseRadiusSq = mouseRadius * mouseRadius;
+
+        for (var i = 0; i < particles.length; i++) {
+          var p = particles[i];
+
+          // Mouse interaction
+          if (mouse.x !== null) {
+            var mdx = p.x - mouse.x;
+            var mdy = p.y - mouse.y;
+            var mdistSq = mdx * mdx + mdy * mdy;
+            if (mdistSq < mouseRadiusSq && mdistSq > 0) {
+              var mdist = Math.sqrt(mdistSq);
+              var force = (mouseRadius - mdist) / mouseRadius;
+              var dir = mouse.down ? -1 : 1; // attract on click, repel otherwise
+              p.vx += (mdx / mdist) * force * 2 * dir;
+              p.vy += (mdy / mdist) * force * 2 * dir;
+            }
+          }
+
+          // Dampen
+          p.vx *= 0.98;
+          p.vy *= 0.98;
+
+          // Move
+          p.x += p.vx;
+          p.y += p.vy;
+
+          // Wrap edges
+          if (p.x < 0) p.x += width;
+          if (p.x > width) p.x -= width;
+          if (p.y < 0) p.y += height;
+          if (p.y > height) p.y -= height;
+
+          // Draw particle
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(0, 229, 255, 0.8)';
+          ctx.fill();
+        }
+
+        // Draw connecting lines
+        var maxDist = 140;
+        var maxDistSq = maxDist * maxDist;
+
+        for (var i = 0; i < particles.length; i++) {
+          for (var j = i + 1; j < particles.length; j++) {
+            var dx = particles[i].x - particles[j].x;
+            var dy = particles[i].y - particles[j].y;
+            var distSq = dx * dx + dy * dy;
+
+            if (distSq < maxDistSq) {
+              var opacity = (1 - Math.sqrt(distSq) / maxDist) * 0.25;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = 'rgba(0, 229, 255, ' + opacity + ')';
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      // Mouse events
+      window.addEventListener('mousemove', function(e) {
+        mouse.x = e.clientX;
+        mouse.y = e.clientY;
+      });
+      window.addEventListener('mouseout', function() {
+        mouse.x = null;
+        mouse.y = null;
+      });
+      window.addEventListener('mousedown', function() { mouse.down = true; });
+      window.addEventListener('mouseup', function() { mouse.down = false; });
+
+      // Touch events
+      window.addEventListener('touchmove', function(e) {
+        mouse.x = e.touches[0].clientX;
+        mouse.y = e.touches[0].clientY;
+      }, { passive: true });
+      window.addEventListener('touchend', function() {
+        mouse.x = null;
+        mouse.y = null;
+      });
+
+      // Resize with debounce
+      var resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          ctx.setTransform(1, 0, 0, 1, 0, 0); // reset scale before re-applying
+          resize();
+        }, 200);
+      });
+
+      resize();
+      animate();
+    })();
+  </script>
+</body>
+</html>
